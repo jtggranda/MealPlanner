@@ -1,0 +1,24 @@
+<div class="col-md-6 offset-md-3">
+    <h3>Update Meal</h3>
+    <form (ngSubmit) = "onSubmit()">
+        <div class = "form-group">
+            <label>Meal Name</label>
+            <input type = "text" class = "form-control" id="name"
+            [(ngModel)] = "meal.name" name = "name">
+        </div>
+    
+        <div class = "form-group">
+            <label>Meal Type</label>
+            <input type = "text" class = "form-control" id="mealType"
+            [(ngModel)] = "meal.mealType" name = "mealType">
+        </div>
+    
+        <div class = "form-group">
+            <label>Tags</label>
+            <input type = "text" class = "form-control" id="tags"
+            [(ngModel)] = "meal.tags" name = "tags">
+        </div>
+    
+        <button class = "btn btn-success" type = "submit">Submit</button>
+    </form>
+    </div>

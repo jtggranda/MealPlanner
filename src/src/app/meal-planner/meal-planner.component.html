@@ -1,0 +1,376 @@
+<div class="col-md-9 offset-md-3">
+    <h3>Update Menu</h3>
+    <form (ngSubmit) = "onSubmit()">
+        <div class = "form-group">
+            <div class="row">
+                <div class="column">
+                    <label>Monday Lunch</label>
+                    <select id="mondayLunch" 
+                    [(ngModel)] = "menu.mondayLunch" name = "mondayLunch">
+                        @for (lunch of lunches; track lunch.id){
+                            <option>{{ lunch.name }}</option>
+                        }
+                    </select>
+                    <label>Monday Dinner</label>
+                    <select id="mondayDinner" 
+                    [(ngModel)] = "menu.mondayDinner" name = "mondayDinner">
+                        @for (dinner of dinners; track dinner.id){
+                            <option>{{ dinner.name }}</option>
+                        }
+                    </select>
+                    <br><br>
+                    <label>Tuesday Lunch</label>
+                    <select id="tuesdayLunch" 
+                    [(ngModel)] = "menu.tuesdayLunch" name = "tuesdayLunch">
+                        @for (lunch of lunches; track lunch.id){
+                            <option>{{ lunch.name }}</option>
+                        }
+                    </select>
+                    <label>Tuesday Dinner</label>
+                    <select id="tuesdayDinner" 
+                    [(ngModel)] = "menu.tuesdayDinner" name = "tuesdayDinner">
+                        @for (dinner of dinners; track dinner.id){
+                            <option>{{ dinner.name }}</option>
+                        }
+                    </select>
+                    <br><br>
+                    <label>Wednesday Lunch</label>
+                    <select id="wednesdayLunch" 
+                    [(ngModel)] = "menu.wednesdayLunch" name = "wednesdayLunch">
+                        @for (lunch of lunches; track lunch.id){
+                            <option>{{ lunch.name }}</option>
+                        }
+                    </select>
+                    <label>Wednesday Dinner</label>
+                    <select id="wednesdayDinner" 
+                    [(ngModel)] = "menu.wednesdayDinner" name = "wednesdayDinner">
+                        @for (dinner of dinners; track dinner.id){
+                            <option>{{ dinner.name }}</option>
+                        }
+                    </select>
+                    <br><br>
+                    <label>Thursday Lunch</label>
+                    <select id="thursdayLunch" 
+                    [(ngModel)] = "menu.thursdayLunch" name = "thursdayLunch">
+                        @for (lunch of lunches; track lunch.id){
+                            <option>{{ lunch.name }}</option>
+                        }
+                    </select>
+                    <label>Thursday Dinner</label>
+                    <select id="thursdayDinner" 
+                    [(ngModel)] = "menu.thursdayDinner" name = "thursdayDinner">
+                        @for (dinner of dinners; track dinner.id){
+                            <option>{{ dinner.name }}</option>
+                        }
+                    </select>
+                    <br><br>
+                    <label>Friday Lunch</label>
+                    <select id="fridayLunch" 
+                    [(ngModel)] = "menu.fridayLunch" name = "fridayLunch">
+                        @for (lunch of lunches; track lunch.id){
+                            <option>{{ lunch.name }}</option>
+                        }
+                    </select>
+                    <br>
+                    <label>Friday Dinner</label>
+                    <select id="fridayDinner" 
+                    [(ngModel)] = "menu.fridayDinner" name = "fridayDinner">
+                        @for (dinner of dinners; track dinner.id){
+                            <option>{{ dinner.name }}</option>
+                        }
+                    </select>
+                    <br><br>
+                    <label>Saturday Lunch</label>
+                    <select id="saturdayLunch" 
+                    [(ngModel)] = "menu.saturdayLunch" name = "saturdayLunch">
+                        @for (lunch of lunches; track lunch.id){
+                            <option>{{ lunch.name }}</option>
+                        }
+                    </select>
+                    <br>
+                    <label>Saturday Dinner</label>
+                    <select id="saturdayDinner" 
+                    [(ngModel)] = "menu.saturdayDinner" name = "saturdayDinner">
+                        @for (dinner of dinners; track dinner.id){
+                            <option>{{ dinner.name }}</option>
+                        }
+                    </select>
+                    <br><br>
+                    <label>Sunday Lunch</label>
+                    <select id="sundayLunch" 
+                    [(ngModel)] = "menu.sundayLunch" name = "sundayLunch">
+                        @for (lunch of lunches; track lunch.id){
+                            <option>{{ lunch.name }}</option>
+                        }
+                    </select>
+                    <br>
+                    <label>Sunday Dinner</label>
+                    <select id="sundayDinner" 
+                    [(ngModel)] = "menu.sundayDinner" name = "sundayDinner">
+                        @for (dinner of dinners; track dinner.id){
+                            <option>{{ dinner.name }}</option>
+                        }
+                    </select>
+                </div>
+                <div class="column">
+                    <label>Side: &nbsp;</label>
+                    <select id="mondaySideLunch" 
+                    [(ngModel)] = "menu.mondaySideLunch" name = "mondaySideLunch">
+                    <option value = "">None</option>
+                        @for (sideLunch of sideLunches; track sideLunch.id){
+                            <option>{{ sideLunch.name }}</option>
+                        }
+                    </select>
+                    <br>
+                    <label>Side: &nbsp;</label>
+                    <select id="mondaySideDinner" 
+                    [(ngModel)] = "menu.mondaySideDinner" name = "mondaySideDinner">
+                    <option value = "">None</option>
+                        @for (sideDinner of sideDinners; track sideDinner.id){
+                            <option>{{ sideDinner.name }}</option>
+                        }
+                    </select>
+                    <br><br>
+                    <label>Side: &nbsp;</label>
+                    <select id="tuesdaySideLunch" 
+                    [(ngModel)] = "menu.tuesdaySideLunch" name = "tuesdaySideLunch">
+                    <option value = "">None</option>
+                        @for (sideLunch of sideLunches; track sideLunch.id){
+                            <option>{{ sideLunch.name }}</option>
+                        }
+                    </select>
+                    <br>
+                    <label>Side: &nbsp;</label>
+                    <select id="tuesdaySideDinner" 
+                    [(ngModel)] = "menu.tuesdaySideDinner" name = "tuesdaySideDinner">
+                    <option value = "">None</option>
+                        @for (sideDinner of sideDinners; track sideDinner.id){
+                            <option>{{ sideDinner.name }}</option>
+                        }
+                    </select>
+                    <br><br>
+                    <label>Side: &nbsp;</label>
+                    <select id="wednesdaySideLunch" 
+                    [(ngModel)] = "menu.wednesdaySideLunch" name = "wednesdaySideLunch">
+                    <option value = "">None</option>
+                        @for (sideLunch of sideLunches; track sideLunch.id){
+                            <option>{{ sideLunch.name }}</option>
+                        }
+                    </select>
+                    <br>
+                    <label>Side: &nbsp;</label>
+                    <select id="wednesdaySideDinner" 
+                    [(ngModel)] = "menu.wednesdaySideDinner" name = "wednesdaySideDinner">
+                    <option value = "">None</option>
+                        @for (sideDinner of sideDinners; track sideDinner.id){
+                            <option>{{ sideDinner.name }}</option>
+                        }
+                    </select>
+                    <br><br>
+                    <label>Side: &nbsp;</label>
+                    <select id="thursdaySideLunch" 
+                    [(ngModel)] = "menu.thursdaySideLunch" name = "thursdaySideLunch">
+                    <option value = "">None</option>
+                        @for (sideLunch of sideLunches; track sideLunch.id){
+                            <option>{{ sideLunch.name }}</option>
+                        }
+                    </select>
+                    <br>
+                    <label>Side: &nbsp;</label>
+                    <select id="thursdaySideDinner" 
+                    [(ngModel)] = "menu.thursdaySideDinner" name = "thursdaySideDinner">
+                    <option value = "">None</option>
+                        @for (sideDinner of sideDinners; track sideDinner.id){
+                            <option>{{ sideDinner.name }}</option>
+                        }
+                    </select>
+                    <br><br>
+                    <label>Side: &nbsp;</label>
+                    <select id="fridaySideLunch" 
+                    [(ngModel)] = "menu.fridaySideLunch" name = "fridaySideLunch">
+                    <option value = "">None</option>
+                        @for (sideLunch of sideLunches; track sideLunch.id){
+                            <option>{{ sideLunch.name }}</option>
+                        }
+                    </select>
+                    <br>
+                    <label>Side: &nbsp;</label>
+                    <select id="fridaySideDinner" 
+                    [(ngModel)] = "menu.fridaySideDinner" name = "fridaySideDinner">
+                    <option value = "">None</option>
+                        @for (sideDinner of sideDinners; track sideDinner.id){
+                            <option>{{ sideDinner.name }}</option>
+                        }
+                    </select>
+                    <br><br>
+                    <label>Side: &nbsp;</label>
+                    <select id="saturdaySideLunch" 
+                    [(ngModel)] = "menu.saturdaySideLunch" name = "saturdaySideLunch">
+                    <option value = "">None</option>
+                        @for (sideLunch of sideLunches; track sideLunch.id){
+                            <option>{{ sideLunch.name }}</option>
+                        }
+                    </select>
+                    <br>
+                    <label>Side: &nbsp;</label>
+                    <select id="saturdaySideDinner" 
+                    [(ngModel)] = "menu.saturdaySideDinner" name = "saturdaySideDinner">
+                    <option value = "">None</option>
+                        @for (sideDinner of sideDinners; track sideDinner.id){
+                            <option>{{ sideDinner.name }}</option>
+                        }
+                    </select>
+                    <br><br>
+                    <label>Side: &nbsp;</label>
+                    <select id="sundaySideLunch" 
+                    [(ngModel)] = "menu.sundaySideLunch" name = "sundaySideLunch">
+                    <option value = "">None</option>
+                        @for (sideLunch of sideLunches; track sideLunch.id){
+                            <option>{{ sideLunch.name }}</option>
+                        }
+                    </select>
+                    <br>
+                    <label>Side: &nbsp;</label>
+                    <select id="sundaySideDinner" 
+                    [(ngModel)] = "menu.sundaySideDinner" name = "sundaySideDinner">
+                    <option value = "">None</option>
+                        @for (sideDinner of sideDinners; track sideDinner.id){
+                            <option>{{ sideDinner.name }}</option>
+                        }
+                    </select>
+                    <br><br>
+                    
+                </div>
+                <div class="column">
+                    <label>Rice: &nbsp;</label>
+                    <select id="mondayLunchRice" 
+                    [(ngModel)] = "menu.mondayLunchRice" name = "mondayLunchRice">
+                        <option>Jasmine Rice</option>
+                        <option>Japanese Rice</option>
+                        <option>Bagoong Rice</option>
+                        <option value="">No Rice</option>
+                    </select>
+                    <br>
+                    <label> &nbsp; Rice: &nbsp;</label>
+                    <select id="mondayDinnerRice" 
+                    [(ngModel)] = "menu.mondayDinnerRice" name = "mondayDinnerRice">
+                        <option>Jasmine Rice</option>
+                        <option>Japanese Rice</option>
+                        <option>Bagoong Rice</option>
+                        <option value="">No Rice</option>
+                    </select>
+                    <br><br>
+                    <label>Rice: &nbsp;</label>
+                    <select id="tuesdayLunchRice" 
+                    [(ngModel)] = "menu.tuesdayLunchRice" name = "tuesdayLunchRice">
+                        <option>Jasmine Rice</option>
+                        <option>Japanese Rice</option>
+                        <option>Bagoong Rice</option>
+                        <option value="">No Rice</option>
+                    </select>
+                    <br>
+                    <label> &nbsp; Rice: &nbsp;</label>
+                    <select id="tuesdayDinnerRice" 
+                    [(ngModel)] = "menu.tuesdayDinnerRice" name = "tuesdayDinnerRice">
+                        <option>Jasmine Rice</option>
+                        <option>Japanese Rice</option>
+                        <option>Bagoong Rice</option>
+                        <option value="">No Rice</option>
+                    </select>
+                    <br><br>
+                    <label>Rice: &nbsp;</label>
+                    <select id="wednesdayLunchRice" 
+                    [(ngModel)] = "menu.wednesdayLunchRice" name = "wednesdayLunchRice">
+                        <option>Jasmine Rice</option>
+                        <option>Japanese Rice</option>
+                        <option>Bagoong Rice</option>
+                        <option value="">No Rice</option>
+                    </select>
+                    <br>
+                    <label> &nbsp; Rice: &nbsp;</label>
+                    <select id="wednesdayDinnerRice" 
+                    [(ngModel)] = "menu.wednesdayDinnerRice" name = "wednesdayDinnerRice">
+                        <option>Jasmine Rice</option>
+                        <option>Japanese Rice</option>
+                        <option>Bagoong Rice</option>
+                        <option value="">No Rice</option>
+                    </select>
+                    <br><br>
+                    <label>Rice: &nbsp;</label>
+                    <select id="thursdayLunchRice" 
+                    [(ngModel)] = "menu.thursdayLunchRice" name = "thursdayLunchRice">
+                        <option>Jasmine Rice</option>
+                        <option>Japanese Rice</option>
+                        <option>Bagoong Rice</option>
+                        <option value="">No Rice</option>
+                    </select>
+                    <br>
+                    <label> &nbsp; Rice: &nbsp;</label>
+                    <select id="thursdayDinnerRice" 
+                    [(ngModel)] = "menu.thursdayDinnerRice" name = "thursdayDinnerRice">
+                        <option>Jasmine Rice</option>
+                        <option>Japanese Rice</option>
+                        <option>Bagoong Rice</option>
+                        <option value="">No Rice</option>
+                    </select>
+                    <br><br>
+                    <label>Rice: &nbsp;</label>
+                    <select id="fridayLunchRice" 
+                    [(ngModel)] = "menu.fridayLunchRice" name = "fridayLunchRice">
+                        <option>Jasmine Rice</option>
+                        <option>Japanese Rice</option>
+                        <option>Bagoong Rice</option>
+                        <option value="">No Rice</option>
+                    </select>
+                    <br>
+                    <label> &nbsp; Rice: &nbsp;</label>
+                    <select id="fridayDinnerRice" 
+                    [(ngModel)] = "menu.fridayDinnerRice" name = "fridayDinnerRice">
+                        <option>Jasmine Rice</option>
+                        <option>Japanese Rice</option>
+                        <option>Bagoong Rice</option>
+                        <option value="">No Rice</option>
+                    </select>
+                    <br><br>
+                    <label>Rice: &nbsp;</label>
+                    <select id="saturdayLunchRice" 
+                    [(ngModel)] = "menu.saturdayLunchRice" name = "saturdayLunchRice">
+                        <option>Jasmine Rice</option>
+                        <option>Japanese Rice</option>
+                        <option>Bagoong Rice</option>
+                        <option value="">No Rice</option>
+                    </select>
+                    <br>
+                    <label> &nbsp; Rice: &nbsp;</label>
+                    <select id="saturdayDinnerRice" 
+                    [(ngModel)] = "menu.saturdayDinnerRice" name = "saturdayDinnerRice">
+                        <option>Jasmine Rice</option>
+                        <option>Japanese Rice</option>
+                        <option>Bagoong Rice</option>
+                        <option value="">No Rice</option>
+                    </select>
+                    <br><br>
+                    <label>Rice: &nbsp;</label>
+                    <select id="sundayLunchRice" 
+                    [(ngModel)] = "menu.sundayLunchRice" name = "sundayLunchRice">
+                        <option>Jasmine Rice</option>
+                        <option>Japanese Rice</option>
+                        <option>Bagoong Rice</option>
+                        <option value="">No Rice</option>
+                    </select>
+                    <br>
+                    <label> &nbsp; Rice: &nbsp;</label>
+                    <select id="sundayDinnerRice" 
+                    [(ngModel)] = "menu.sundayDinnerRice" name = "sundayDinnerRice">
+                        <option>Jasmine Rice</option>
+                        <option>Japanese Rice</option>
+                        <option>Bagoong Rice</option>
+                        <option value="">No Rice</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <br>
+        <button class = "btn btn-success" type = "submit">Update Menu</button>
+    </form>
+    </div>

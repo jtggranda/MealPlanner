@@ -1,0 +1,47 @@
+export class Menu {
+    id!: number;
+    mondayLunch!: String;
+    mondayDinner!: String;
+    tuesdayLunch!: String;
+    tuesdayDinner!: String;
+    wednesdayLunch!: String;
+    wednesdayDinner!: String;
+    thursdayLunch!: String;
+    thursdayDinner!: String;
+    fridayLunch!: String;
+    fridayDinner!: String;
+    saturdayLunch!: String;
+    saturdayDinner!: String;
+    sundayLunch!: String;
+    sundayDinner!: String;
+    mondayLunchRice!: String;
+    mondayDinnerRice!: String;
+    tuesdayLunchRice!: String;
+    tuesdayDinnerRice!: String;
+    wednesdayLunchRice!: String;
+    wednesdayDinnerRice!: String;
+    thursdayLunchRice!: String;
+    thursdayDinnerRice!: String;
+    fridayLunchRice!: String;
+    fridayDinnerRice!: String;
+    saturdayLunchRice!: String;
+    saturdayDinnerRice!: String;
+    sundayLunchRice!: String;
+    sundayDinnerRice!: String;
+    mondaySideLunch!: String;
+    mondaySideDinner!: String;
+    tuesdaySideLunch!: String;
+    tuesdaySideDinner!: String;
+    wednesdaySideLunch!: String;
+    wednesdaySideDinner!: String;
+    thursdaySideLunch!: String;
+    thursdaySideDinner!: String;
+    fridaySideLunch!: String;
+    fridaySideDinner!: String;
+    saturdaySideLunch!: String;
+    saturdaySideDinner!: String;
+    sundaySideLunch!: String;
+    sundaySideDinner!: String;
+    constructor() {
+    }
+}

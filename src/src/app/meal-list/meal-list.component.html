@@ -1,0 +1,25 @@
+<h2>Meal List</h2>
+<table class = "table table-striped">
+    <thead>
+        <tr>
+            <th>Meal Name</th>
+            <th>Meal Type</th>
+            <th>Tags</th>
+            <th>Actions</th> 
+        </tr>
+    </thead>
+    <tbody>
+        
+            @for (meal of meals; track meal.id){
+            <tr>
+                <td>{{ meal.name }}</td>
+                <td>{{ meal.mealType }}</td>
+                <td>{{ meal.tags }}</td>
+                <td>
+                    <button (click) = "updateMeal(meal.id)" class="btn btn-info">Update</button>
+                    <button (click) = "deleteMeal(meal.id)" class="btn btn-danger" style="margin-left: 10px">Delete</button>
+                </td> 
+            </tr>
+            }
+    </tbody>
+</table>
