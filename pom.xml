@@ -106,7 +106,7 @@
 			                <goal>copy-resources</goal>
 			            </goals>
 			            <configuration>
-			                <outputDirectory>${project.build.directory}/classes/static/</outputDirectory>
+			                <outputDirectory>/src/target/classes/static/</outputDirectory>
 			                <resources>
 			                    <resource>
 			                        <directory>/src/dist/meal-planner-frontend</directory>

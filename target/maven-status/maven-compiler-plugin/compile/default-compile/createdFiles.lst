@@ -1,9 +1,9 @@
-com\example\springboot\controller\IndexController.class
-com\example\springboot\exception\ResourceNotFoundException.class
-com\example\springboot\model\Menu.class
-com\example\springboot\SpringbootBackendApplication.class
 com\example\springboot\controller\MealController.class
 com\example\springboot\controller\MenuController.class
 com\example\springboot\repository\MealRepository.class
+com\example\springboot\controller\IndexController.class
+com\example\springboot\exception\ResourceNotFoundException.class
 com\example\springboot\model\Meal.class
+com\example\springboot\model\Menu.class
+com\example\springboot\SpringbootBackendApplication.class
 com\example\springboot\repository\MenuRepository.class
