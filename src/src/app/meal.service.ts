@@ -8,7 +8,7 @@ import { Meal } from './meal';
 })
 export class MealService {
 
-  private baseURL = "http://localhost:8080/api/v1/meals";
+  private baseURL = "http://metro.proxy.rlwy.net:24358/api/v1/meals";
 
   constructor(private httpClient: HttpClient) { }
 
