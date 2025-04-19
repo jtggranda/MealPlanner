@@ -8,7 +8,7 @@ import { Meal } from './meal';
 })
 export class MealService {
 
-  private baseURL = "http://metro.proxy.rlwy.net:24358/api/v1/meals";
+  private baseURL = "https://mealplanner-production.up.railway.app/api/v1/meals";
 
   constructor(private httpClient: HttpClient) { }
 

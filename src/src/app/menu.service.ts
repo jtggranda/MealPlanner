@@ -7,7 +7,7 @@ import { Menu } from './menu';
   providedIn: 'root'
 })
 export class MenuService {
-  private baseURL = "http://metro.proxy.rlwy.net:24358/api/v1/menus";
+  private baseURL = "https://mealplanner-production.up.railway.app/api/v1/menus";
 
   constructor(private httpClient: HttpClient) { }
 
