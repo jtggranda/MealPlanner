@@ -79,6 +79,21 @@ public class MenuController {
 		menu.setSundaySideLunch(menuDetails.getSundaySideLunch());
 		menu.setSundaySideDinner(menuDetails.getSundaySideDinner());
 		
+		menu.setMondayLunchOther(menuDetails.getMondayLunchOther());
+		menu.setMondayDinnerOther(menuDetails.getMondayDinnerOther());
+		menu.setTuesdayLunchOther(menuDetails.getTuesdayLunchOther());
+		menu.setTuesdayDinnerOther(menuDetails.getTuesdayDinnerOther());
+		menu.setWednesdayLunchOther(menuDetails.getWednesdayLunchOther());
+		menu.setWednesdayDinnerOther(menuDetails.getWednesdayDinnerOther());
+		menu.setThursdayLunchOther(menuDetails.getThursdayLunchOther());
+		menu.setThursdayDinnerOther(menuDetails.getThursdayDinnerOther());
+		menu.setFridayLunchOther(menuDetails.getFridayLunchOther());
+		menu.setFridayDinnerOther(menuDetails.getFridayDinnerOther());
+		menu.setSaturdayLunchOther(menuDetails.getSaturdayLunchOther());
+		menu.setSaturdayDinnerOther(menuDetails.getSaturdayDinnerOther());
+		menu.setSundayLunchOther(menuDetails.getSundayLunchOther());
+		menu.setSundayDinnerOther(menuDetails.getSundayDinnerOther());
+		
 		Menu updatedMenu = menuRepository.save(menu);
 		return ResponseEntity.ok(updatedMenu);
 	}

@@ -141,6 +141,48 @@ public class Menu {
 	@Column(name="sunday_side_dinner")
 	private String sundaySideDinner;
 	
+	@Column(name="monday_lunch_other")
+	private String mondayLunchOther;
+	
+	@Column(name="monday_dinner_other")
+	private String mondayDinnerOther;
+	
+	@Column(name="tuesday_lunch_other")
+	private String tuesdayLunchOther;
+	
+	@Column(name="tuesday_dinner_other")
+	private String tuesdayDinnerOther;
+	
+	@Column(name="wednesday_lunch_other")
+	private String wednesdayLunchOther;
+	
+	@Column(name="wednesday_dinner_other")
+	private String wednesdayDinnerOther;
+	
+	@Column(name="thursday_lunch_other")
+	private String thursdayLunchOther;
+	
+	@Column(name="thursday_dinner_other")
+	private String thursdayDinnerOther;
+	
+	@Column(name="friday_lunch_other")
+	private String fridayLunchOther;
+	
+	@Column(name="friday_dinner_other")
+	private String fridayDinnerOther;
+	
+	@Column(name="saturday_lunch_other")
+	private String saturdayLunchOther;
+	
+	@Column(name="saturday_dinner_other")
+	private String saturdayDinnerOther;
+	
+	@Column(name="sunday_lunch_other")
+	private String sundayLunchOther;
+	
+	@Column(name="sunday_dinner_other")
+	private String sundayDinnerOther;
+	
 	public Menu() {
 		
 	}
@@ -148,7 +190,8 @@ public class Menu {
 	public Menu(String ml, String md, String tl, String td, String wl, String wd, String thl, String thd, String fl, String fd,
 			String sl, String sd, String sul, String sud, String mlr, String mdr, String tlr, String tdr, String wlr, String wdr, String thlr, String thdr, String flr, String fdr,
 			String slr, String sdr, String sulr, String sudr, String msl, String msd, String tsl, String tsd, String wsl, String wsd, String thsl, String thsd, String fsl, String fsd,
-			String ssl, String ssd, String susl, String susd) {
+			String ssl, String ssd, String susl, String susd, String mlo, String mdo, String tlo, String tdo, String wlo, String wdo, String thlo, String thdo, String flo, String fdo,
+			String slo, String sdo, String sulo, String sudo) {
 		super();
 		this.mondayLunch = ml;
 		this.mondayDinner = md;
@@ -212,6 +255,27 @@ public class Menu {
 		
 		this.sundaySideLunch = susl;
 		this.sundaySideDinner = susd;
+		
+		this.mondayLunchOther = mlo;
+		this.mondayDinnerOther = mdo;
+		
+		this.tuesdayLunchOther = tlo;
+		this.tuesdayDinnerOther = tdo;
+		
+		this.wednesdayLunchOther = wlo;
+		this.wednesdayDinnerOther = wdo;
+		
+		this.thursdayLunchOther = thlo;
+		this.thursdayDinnerOther = thdo;
+		
+		this.fridayLunchOther = flo;
+		this.fridayDinnerOther = fdo;
+		
+		this.saturdayLunchOther = slo;
+		this.saturdayDinnerOther = sdo;
+		
+		this.sundayLunchOther = sulo;
+		this.sundayDinnerOther = sudo;
 	}
 
 	public long getId() {
@@ -558,6 +622,117 @@ public class Menu {
 		this.sundaySideDinner = sundaySideDinner;
 	}
 	
+	public String getMondayLunchOther() {
+		return mondayLunchOther;
+	}
+
+	public void setMondayLunchOther(String mondayLunchOther) {
+		this.mondayLunchOther = mondayLunchOther;
+	}
+
+	public String getMondayDinnerOther() {
+		return mondayDinnerOther;
+	}
+
+	public void setMondayDinnerOther(String mondayDinnerOther) {
+		this.mondayDinnerOther = mondayDinnerOther;
+	}
+
+	public String getTuesdayLunchOther() {
+		return tuesdayLunchOther;
+	}
+
+	public void setTuesdayLunchOther(String tuesdayLunchOther) {
+		this.tuesdayLunchOther = tuesdayLunchOther;
+	}
+
+	public String getTuesdayDinnerOther() {
+		return tuesdayDinnerOther;
+	}
+
+	public void setTuesdayDinnerOther(String tuesdayDinnerOther) {
+		this.tuesdayDinnerOther = tuesdayDinnerOther;
+	}
+
+	public String getWednesdayLunchOther() {
+		return wednesdayLunchOther;
+	}
+
+	public void setWednesdayLunchOther(String wednesdayLunchOther) {
+		this.wednesdayLunchOther = wednesdayLunchOther;
+	}
+
+	public String getWednesdayDinnerOther() {
+		return wednesdayDinnerOther;
+	}
+
+	public void setWednesdayDinnerOther(String wednesdayDinnerOther) {
+		this.wednesdayDinnerOther = wednesdayDinnerOther;
+	}
+
+	public String getThursdayLunchOther() {
+		return thursdayLunchOther;
+	}
+
+	public void setThursdayLunchOther(String thursdayLunchOther) {
+		this.thursdayLunchOther = thursdayLunchOther;
+	}
+
+	public String getThursdayDinnerOther() {
+		return thursdayDinnerOther;
+	}
+
+	public void setThursdayDinnerOther(String thursdayDinnerOther) {
+		this.thursdayDinnerOther = thursdayDinnerOther;
+	}
+
+	public String getFridayLunchOther() {
+		return fridayLunchOther;
+	}
+
+	public void setFridayLunchOther(String fridayLunchOther) {
+		this.fridayLunchOther = fridayLunchOther;
+	}
+
+	public String getFridayDinnerOther() {
+		return fridayDinnerOther;
+	}
+
+	public void setFridayDinnerOther(String fridayDinnerOther) {
+		this.fridayDinnerOther = fridayDinnerOther;
+	}
+
+	public String getSaturdayLunchOther() {
+		return saturdayLunchOther;
+	}
+
+	public void setSaturdayLunchOther(String saturdayLunchOther) {
+		this.saturdayLunchOther = saturdayLunchOther;
+	}
+
+	public String getSaturdayDinnerOther() {
+		return saturdayDinnerOther;
+	}
+
+	public void setSaturdayDinnerOther(String saturdayDinnerOther) {
+		this.saturdayDinnerOther = saturdayDinnerOther;
+	}
+
+	public String getSundayLunchOther() {
+		return sundayLunchOther;
+	}
+
+	public void setSundayLunchOther(String sundayLunchOther) {
+		this.sundayLunchOther = sundayLunchOther;
+	}
+
+	public String getSundayDinnerOther() {
+		return sundayDinnerOther;
+	}
+
+	public void setSundayDinnerOther(String sundayDinnerOther) {
+		this.sundayDinnerOther = sundayDinnerOther;
+	}
 	
 	
 }

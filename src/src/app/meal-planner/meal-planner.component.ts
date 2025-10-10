@@ -20,6 +20,8 @@ export class MealPlannerComponent {
   dinners!: Meal[];
   sideLunches!: Meal[];
   sideDinners!: Meal[];
+  rices!: Meal[];
+  others!: String[];
 
   constructor(private menuService: MenuService, private mealService: MealService, private route: ActivatedRoute, private router: Router){}
 
@@ -28,6 +30,7 @@ export class MealPlannerComponent {
     this.getDinners();
     this.getSideLunches();
     this.getSideDinners();
+    this.getRices();
     this.id = this.route.snapshot.params['id'];
 
     this.menuService.getMenu().subscribe(data => {
@@ -58,6 +61,11 @@ export class MealPlannerComponent {
     });
   }
 
+  private getRices(){
+    this.mealService.getRicesList().subscribe(data => {
+      this.rices = data;
+    });
+  }
 
   updateMenu(){
     this.menuService.updateMenu(this.id, this.menu).subscribe(data =>{

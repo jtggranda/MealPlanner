@@ -42,6 +42,20 @@ export class Menu {
     saturdaySideDinner!: String;
     sundaySideLunch!: String;
     sundaySideDinner!: String;
+    mondayLunchOther!: String;
+    mondayDinnerOther!: String;
+    tuesdayLunchOther!: String;
+    tuesdayDinnerOther!: String;
+    wednesdayLunchOther!: String;
+    wednesdayDinnerOther!: String;
+    thursdayLunchOther!: String;
+    thursdayDinnerOther!: String;
+    fridayLunchOther!: String;
+    fridayDinnerOther!: String;
+    saturdayLunchOther!: String;
+    saturdayDinnerOther!: String;
+    sundayLunchOther!: String;
+    sundayDinnerOther!: String;
     constructor() {
     }
 }

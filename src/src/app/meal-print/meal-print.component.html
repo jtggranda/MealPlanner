@@ -2,14 +2,22 @@
     <tbody>
             <tr>
                 <td class="reservation_fontcolor" width="50%"><h3>MONDAY</h3></td>
-                <td class="reservation_fontcolor"><h4>Lunch</h4> {{ menu.mondayLunch }} 
+                <td class="reservation_fontcolor"><h4>Lunch</h4> 
+                    @if (menu.mondayLunchOther != ""){
+                        {{ menu.mondayLunchOther }} <br>
+                    }
+                    {{ menu.mondayLunch }} 
                     @if (menu.mondaySideLunch != ""){
                         <br> {{ menu.mondaySideLunch }}
                     }
                     @if (menu.mondayLunchRice != ""){
                         <br> {{ menu.mondayLunchRice }}
                     }
-                    <br> <h4>Dinner</h4> {{ menu.mondayDinner }} 
+                    <br> <h4>Dinner</h4>  
+                    @if (menu.mondayDinnerOther != ""){
+                        {{ menu.mondayDinnerOther }} <br>
+                    }
+                    {{ menu.mondayDinner }}  
                     @if (menu.mondaySideDinner != ""){
                         <br> {{ menu.mondaySideDinner }}
                     }
@@ -20,14 +28,22 @@
             </tr>
             <tr>
                 <td class="reservation_fontcolor" width="50%"><h3>TUESDAY</h3></td>
-                <td class="reservation_fontcolor"><h4>Lunch</h4> {{ menu.tuesdayLunch }}
+                <td class="reservation_fontcolor"><h4>Lunch</h4>  
+                    @if (menu.tuesdayLunchOther != ""){
+                        {{ menu.tuesdayLunchOther }} <br>
+                    }
+                    {{ menu.tuesdayLunch }} 
                     @if (menu.tuesdaySideLunch != ""){
                         <br> {{ menu.tuesdaySideLunch }}
                     }
                     @if (menu.tuesdayLunchRice != ""){
                         <br> {{ menu.tuesdayLunchRice }}
                     }
-                    <br> <h4>Dinner</h4> {{ menu.tuesdayDinner }}
+                    <br> <h4>Dinner</h4>  
+                    @if (menu.tuesdayDinnerOther != ""){
+                        {{ menu.tuesdayDinnerOther }} <br>
+                    }
+                    {{ menu.tuesdayDinner }} 
                     @if (menu.tuesdaySideDinner != ""){
                         <br> {{ menu.tuesdaySideDinner }}
                     }
@@ -38,14 +54,22 @@
             </tr>
             <tr>
                 <td class="reservation_fontcolor" width="50%"><h3>WEDNESDAY</h3></td>
-                <td class="reservation_fontcolor"><h4>Lunch</h4> {{ menu.wednesdayLunch }}
+                <td class="reservation_fontcolor"><h4>Lunch</h4>  
+                    @if (menu.wednesdayLunchOther != ""){
+                        {{ menu.wednesdayLunchOther }} <br>
+                    }
+                    {{ menu.wednesdayLunch }} 
                     @if (menu.wednesdaySideLunch != ""){
                         <br> {{ menu.wednesdaySideLunch }}
                     }
                     @if (menu.wednesdayLunchRice != ""){
                         <br> {{ menu.wednesdayLunchRice }}
                     }
-                    <br> <h4>Dinner</h4> {{ menu.wednesdayDinner }}
+                    <br> <h4>Dinner</h4>  
+                    @if (menu.wednesdayDinnerOther != ""){
+                        {{ menu.wednesdayDinnerOther }} <br>
+                    }
+                    {{ menu.wednesdayDinner }} 
                     @if (menu.wednesdaySideDinner != ""){
                         <br> {{ menu.wednesdaySideDinner }}
                     }
@@ -56,14 +80,22 @@
             </tr>
             <tr>
                 <td class="reservation_fontcolor" width="50%"><h3>THURSDAY</h3></td>
-                <td class="reservation_fontcolor"><h4>Lunch</h4> {{ menu.thursdayLunch }}
+                <td class="reservation_fontcolor"><h4>Lunch</h4>  
+                    @if (menu.thursdayLunchOther != ""){
+                        {{ menu.thursdayLunchOther }} <br>
+                    }
+                    {{ menu.thursdayLunch }} 
                     @if (menu.thursdaySideLunch != ""){
                         <br> {{ menu.thursdaySideLunch }}
                     }
                     @if (menu.thursdayLunchRice != ""){
                         <br> {{ menu.thursdayLunchRice }}
                     }
-                    <br> <h4>Dinner</h4> {{ menu.thursdayDinner }}
+                    <br> <h4>Dinner</h4>  
+                    @if (menu.thursdayDinnerOther != ""){
+                        {{ menu.thursdayDinnerOther }} <br>
+                    }
+                    {{ menu.thursdayDinner }} 
                     @if (menu.thursdaySideDinner != ""){
                         <br> {{ menu.thursdaySideDinner }}
                     }
@@ -74,14 +106,22 @@
             </tr>
             <tr>
                 <td class="reservation_fontcolor" width="50%"><h3>FRIDAY</h3></td>
-                <td class="reservation_fontcolor"><h4>Lunch</h4> {{ menu.fridayLunch }}
+                <td class="reservation_fontcolor"><h4>Lunch</h4>  
+                    @if (menu.fridayLunchOther != ""){
+                        {{ menu.fridayLunchOther }} <br>
+                    }
+                    {{ menu.fridayLunch }} 
                     @if (menu.fridaySideLunch != ""){
                         <br> {{ menu.fridaySideLunch }}
                     }
                     @if (menu.fridayLunchRice != ""){
                         <br> {{ menu.fridayLunchRice }}
                     }
-                    <br> <h4>Dinner</h4> {{ menu.fridayDinner }}
+                    <br> <h4>Dinner</h4>  
+                    @if (menu.fridayDinnerOther != ""){
+                        {{ menu.fridayDinnerOther }} <br>
+                    }
+                    {{ menu.fridayDinner }} 
                     @if (menu.fridaySideDinner != ""){
                         <br> {{ menu.fridaySideDinner }}
                     }
@@ -92,14 +132,22 @@
             </tr>
             <tr>
                 <td class="reservation_fontcolor" width="50%"><h3>SATURDAY</h3></td>
-                <td class="reservation_fontcolor"><h4>Lunch</h4> {{ menu.saturdayLunch }}
+                <td class="reservation_fontcolor"><h4>Lunch</h4>  
+                    @if (menu.saturdayLunchOther != ""){
+                        {{ menu.saturdayLunchOther }} <br>
+                    }
+                    {{ menu.saturdayLunch }} 
                     @if (menu.saturdaySideLunch != ""){
                         <br> {{ menu.saturdaySideLunch }}
                     }
                     @if (menu.saturdayLunchRice != ""){
                         <br> {{ menu.saturdayLunchRice }}
                     }
-                    <br> <h4>Dinner</h4> {{ menu.saturdayDinner }}
+                    <br> <h4>Dinner</h4>  
+                    @if (menu.saturdayDinnerOther != ""){
+                        {{ menu.saturdayDinnerOther }} <br>
+                    }
+                    {{ menu.saturdayDinner }} 
                     @if (menu.saturdaySideDinner != ""){
                         <br> {{ menu.saturdaySideDinner }}
                     }
@@ -110,14 +158,22 @@
             </tr>
             <tr>
                 <td class="reservation_fontcolor" width="50%"><h3>SUNDAY</h3></td>
-                <td class="reservation_fontcolor"><h4>Lunch</h4> {{ menu.sundayLunch }}
+                <td class="reservation_fontcolor"><h4>Lunch</h4>  
+                    @if (menu.sundayLunchOther != ""){
+                        {{ menu.sundayLunchOther }} <br>
+                    }
+                    {{ menu.sundayLunch }} 
                     @if (menu.sundaySideLunch != ""){
                         <br> {{ menu.sundaySideLunch }}
                     }
                     @if (menu.sundayLunchRice != ""){
                         <br> {{ menu.sundayLunchRice }}
                     }
-                    <br> <h4>Dinner</h4> {{ menu.sundayDinner }}
+                    <br> <h4>Dinner</h4>  
+                    @if (menu.sundayDinnerOther != ""){
+                        {{ menu.sundayDinnerOther }} <br>
+                    }
+                    {{ menu.sundayDinner }} 
                     @if (menu.sundaySideDinner != ""){
                         <br> {{ menu.sundaySideDinner }}
                     }

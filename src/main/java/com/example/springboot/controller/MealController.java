@@ -57,6 +57,12 @@ public class MealController {
 		return mealRepository.findByMealType("Side Dinner");
 	}
 	
+	//get dinner meals
+	@GetMapping("/meals/rices")
+	public List<Meal> getRiceMeals(){
+		return mealRepository.findByMealType("Rice");
+	}
+	
 	//create meal rest api
 	@CrossOrigin
 	@PostMapping("/meals")

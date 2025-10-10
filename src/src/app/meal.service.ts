@@ -8,7 +8,8 @@ import { Meal } from './meal';
 })
 export class MealService {
 
-  private baseURL = "https://mealplanner-production.up.railway.app/api/v1/meals";
+  // private baseURL = "https://mealplanner-production.up.railway.app/api/v1/meals";
+  private baseURL = "http://localhost:8080/api/v1/meals";
 
   constructor(private httpClient: HttpClient) { }
 
@@ -32,6 +33,10 @@ export class MealService {
   
   getSideDinnersList(): Observable<Meal[]>{
     return this.httpClient.get<Meal[]>(this.baseURL + '/sidedinners');
+  }
+
+  getRicesList(): Observable<Meal[]>{
+    return this.httpClient.get<Meal[]>(this.baseURL + '/rices');
   }
 
   createMeal(meal: Meal): Observable<Object>{

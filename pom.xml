@@ -58,6 +58,7 @@
 	</dependencies>
 
 	<build>
+		<finalName>MenuPlanner</finalName>
 		<plugins>
 			<plugin>
 			    <groupId>com.github.eirslett</groupId>
@@ -109,7 +110,7 @@
 			                <outputDirectory>/src/target/classes/static/</outputDirectory>
 			                <resources>
 			                    <resource>
-			                        <directory>/src/dist/meal-planner-frontend</directory>
+			                        <directory>/src/dist/springangular</directory>
 			                    </resource>
 			                </resources>
 			            </configuration>
