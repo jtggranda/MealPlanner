@@ -107,10 +107,10 @@
 			                <goal>copy-resources</goal>
 			            </goals>
 			            <configuration>
-			                <outputDirectory>/src/target/classes/static/</outputDirectory>
+			                <outputDirectory>${basedir}/target/classes/static</outputDirectory>
 			                <resources>
 			                    <resource>
-			                        <directory>/src/dist/springangular</directory>
+			                        <directory>/src/dist/springangular/browser</directory>
 			                    </resource>
 			                </resources>
 			            </configuration>

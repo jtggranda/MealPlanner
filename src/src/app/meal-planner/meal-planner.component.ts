@@ -42,22 +42,26 @@ export class MealPlannerComponent {
   private getLunches(){
     this.mealService.getLunchesList().subscribe(data => {
       this.lunches = data;
+      this.lunches.sort((a,b) => a.name.localeCompare(b.name));
     });
   }
   private getDinners(){
     this.mealService.getDinnersList().subscribe(data => {
       this.dinners = data;
+      this.dinners.sort((a,b) => a.name.localeCompare(b.name));
     });
   }
 
   private getSideLunches(){
     this.mealService.getSideLunchesList().subscribe(data => {
       this.sideLunches = data;
+      this.sideLunches.sort((a,b) => a.name.localeCompare(b.name));
     });
   }
   private getSideDinners(){
     this.mealService.getSideDinnersList().subscribe(data => {
       this.sideDinners = data;
+      this.sideDinners.sort((a,b) => a.name.localeCompare(b.name));
     });
   }
 
@@ -76,11 +80,58 @@ export class MealPlannerComponent {
   }
 
   onSubmit(){
+    this.replaceNullWithEmpty();
     console.log(this.menu);
     this.updateMenu();
   }
 
   goToPrintMenu(){
     this.router.navigate(['/meal-print']);
+  }
+
+  replaceNullWithEmpty(){
+    if(this.menu.mondayLunchOther == null){
+      this.menu.mondayLunchOther = "";
+    }
+    if(this.menu.tuesdayLunchOther == null){
+      this.menu.tuesdayLunchOther = "";
+    }
+    if(this.menu.wednesdayLunchOther == null){
+      this.menu.wednesdayLunchOther = "";
+    }
+    if(this.menu.thursdayLunchOther == null){
+      this.menu.thursdayLunchOther = "";
+    }
+    if(this.menu.fridayLunchOther == null){
+      this.menu.fridayLunchOther = "";
+    }
+    if(this.menu.saturdayLunchOther == null){
+      this.menu.saturdayLunchOther = "";
+    }
+    if(this.menu.sundayLunchOther == null){
+      this.menu.sundayLunchOther = "";
+    }
+    if(this.menu.mondayDinnerOther == null){
+      this.menu.mondayDinnerOther = "";
+    }
+    if(this.menu.tuesdayDinnerOther == null){
+      this.menu.tuesdayDinnerOther = "";
+    }
+    if(this.menu.wednesdayDinnerOther == null){
+      this.menu.wednesdayDinnerOther = "";
+    }
+    if(this.menu.thursdayDinnerOther == null){
+      this.menu.thursdayDinnerOther = "";
+    }
+    if(this.menu.fridayDinnerOther == null){
+      this.menu.fridayDinnerOther = "";
+    }
+    if(this.menu.saturdayDinnerOther == null){
+      this.menu.saturdayDinnerOther = "";
+    }
+    if(this.menu.sundayDinnerOther == null){
+      this.menu.sundayDinnerOther = "";
+    }
+    
   }
 }

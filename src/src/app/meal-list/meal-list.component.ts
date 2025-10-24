@@ -23,6 +23,7 @@ export class MealListComponent {
   private getMeals(){
     this.mealService.getMealsList().subscribe(data => {
       this.meals = data;
+      this.meals.sort((a,b) => a.name.localeCompare(b.name));
     });
   }
 
