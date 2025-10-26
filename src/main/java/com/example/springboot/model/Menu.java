@@ -183,6 +183,9 @@ public class Menu {
 	@Column(name="sunday_dinner_other")
 	private String sundayDinnerOther;
 	
+	@Column(name="monday_hide")
+	private boolean mondayHide;
+	
 	public Menu() {
 		
 	}
@@ -191,7 +194,7 @@ public class Menu {
 			String sl, String sd, String sul, String sud, String mlr, String mdr, String tlr, String tdr, String wlr, String wdr, String thlr, String thdr, String flr, String fdr,
 			String slr, String sdr, String sulr, String sudr, String msl, String msd, String tsl, String tsd, String wsl, String wsd, String thsl, String thsd, String fsl, String fsd,
 			String ssl, String ssd, String susl, String susd, String mlo, String mdo, String tlo, String tdo, String wlo, String wdo, String thlo, String thdo, String flo, String fdo,
-			String slo, String sdo, String sulo, String sudo) {
+			String slo, String sdo, String sulo, String sudo, boolean mh) {
 		super();
 		this.mondayLunch = ml;
 		this.mondayDinner = md;
@@ -276,6 +279,8 @@ public class Menu {
 		
 		this.sundayLunchOther = sulo;
 		this.sundayDinnerOther = sudo;
+		
+		this.mondayHide = mh;
 	}
 
 	public long getId() {
@@ -734,5 +739,12 @@ public class Menu {
 		this.sundayDinnerOther = sundayDinnerOther;
 	}
 	
+	public boolean getMondayHide() {
+		return mondayHide;
+	}
+
+	public void setMondayHide(boolean mondayHide) {
+		this.mondayHide = mondayHide;
+	}
 	
 }

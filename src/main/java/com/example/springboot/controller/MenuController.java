@@ -94,6 +94,8 @@ public class MenuController {
 		menu.setSundayLunchOther(menuDetails.getSundayLunchOther());
 		menu.setSundayDinnerOther(menuDetails.getSundayDinnerOther());
 		
+		menu.setMondayHide(menuDetails.getMondayHide());
+		
 		Menu updatedMenu = menuRepository.save(menu);
 		return ResponseEntity.ok(updatedMenu);
 	}

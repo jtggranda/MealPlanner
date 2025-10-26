@@ -56,6 +56,7 @@ export class Menu {
     saturdayDinnerOther!: String;
     sundayLunchOther!: String;
     sundayDinnerOther!: String;
+    mondayHide!: Boolean;
     constructor() {
     }
 }
