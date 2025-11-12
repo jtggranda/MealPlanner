@@ -1,0 +1,10 @@
+tbody{
+    font-size: 12px;
+}
+.reservation_fontcolor h4{
+    font-family: 'Arial', sans-serif;
+    color: orange;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: underline;
+}
